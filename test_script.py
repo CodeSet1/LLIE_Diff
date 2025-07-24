@@ -1,0 +1,2 @@
+import os
+os.system("CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 eval_diffusion.py --config LLIE_wavelet.yml --world_size=1 --resume E:/WaveDM-main/LLIEDiff64.pth.tar")
